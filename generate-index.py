@@ -15,18 +15,20 @@ HIDDEN_FILES = {
 }
 
 CSS = """
+:root {
+    color-scheme: light dark;
+}
+
 body {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
                  "Liberation Mono", "Courier New", monospace;
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
-    color: #222;
 }
 
 h1 {
     font-size: 1.4rem;
-    font-weight: 600;
 }
 
 table {
@@ -42,7 +44,7 @@ td {
 }
 
 th {
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid GrayText;
 }
 
 .name {
@@ -58,25 +60,15 @@ th {
 }
 
 a {
-    color: #0645ad;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: LinkText;
 }
 
 @media (max-width: 600px) {
-    body {
-        margin: 20px auto;
-    }
-
     .modified {
         display: none;
     }
 }
 """
-
 
 def human_size(size: int) -> str:
     units = ["B", "KB", "MB", "GB", "TB"]
