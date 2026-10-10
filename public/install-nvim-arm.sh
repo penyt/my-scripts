@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# curl -fsSL https://sh.penyt.com/install-nvim.sh | bash
+# curl -fsSL https://sh.penyt.com/install-nvim-arm.sh | bash
 
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz
 sudo rm -rf /opt/nvim-linux-arm64
